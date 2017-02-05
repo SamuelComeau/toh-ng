@@ -1,0 +1,18 @@
+<div class=boxed *ngIf="hero != null">
+    <h2>{{hero.name}} traits:</h2>
+    <div>  <label>name:</label>{{hero.name}}</div>
+    <div><label>id: </label> {{hero.id}} </div>
+    <div>
+        <label>Strength: </label>
+        <input [(ngModel)]="hero.strength" placeholder="Strength">
+    </div>
+     <div>
+        <label>Willpower: </label>
+        <input [(ngModel)]="hero.willpower" placeholder="Willpower">
+    </div>
+     <div>
+        <label>Agility: </label>
+        <input [(ngModel)]="hero.agility" placeholder="Agility">
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>
